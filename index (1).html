@@ -8,21 +8,17 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9f9f9;
-      color: #333;
+      background: linear-gradient(to bottom, #f4f4f4, #eaeaea);
       overflow-x: hidden;
     }
 
     header {
       background-color: #4d148c;
       color: white;
-      padding: 1em 2em;
+      padding: 1em;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
 
     header h1 span {
@@ -33,56 +29,32 @@
       background: url('https://images.unsplash.com/photo-1506619216599-9d16d0903dfd') no-repeat center center/cover;
       color: white;
       text-align: center;
-      padding: 5em 1em;
+      padding: 4em 1em;
     }
 
     .hero h2 {
-      font-size: 3em;
+      font-size: 2.5em;
     }
 
     .container {
       padding: 2em;
-      max-width: 1200px;
+      max-width: 800px;
       margin: auto;
-    }
-
-    .fedex-image {
-      display: block;
-      margin: 2em auto;
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    }
-
-    section.info {
-      margin-bottom: 4em;
-    }
-
-    h3 {
-      color: #4d148c;
-      margin-bottom: 1em;
-    }
-
-    p {
-      line-height: 1.7;
     }
 
     .options {
       display: flex;
       justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 1em;
-      margin: 3em 0;
+      margin-bottom: 2em;
     }
 
     .option {
-      flex: 1 1 30%;
       text-align: center;
       padding: 1em;
       border-radius: 8px;
       background: white;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      min-width: 250px;
+      width: 30%;
     }
 
     .option.track {
@@ -95,14 +67,12 @@
       gap: 1em;
       justify-content: center;
       margin-bottom: 2em;
-      flex-wrap: wrap;
     }
 
     .track-box input {
-      padding: 0.7em;
+      padding: 0.5em;
       font-size: 1em;
       width: 60%;
-      max-width: 400px;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
@@ -110,7 +80,7 @@
     .track-box button {
       background: #ff6600;
       color: white;
-      padding: 0.7em 1.5em;
+      padding: 0.5em 1em;
       font-size: 1em;
       border: none;
       border-radius: 5px;
@@ -135,11 +105,11 @@
       color: white;
     }
 
-    footer {
+    .footer {
+      text-align: center;
+      padding: 2em;
       background-color: #4d148c;
       color: white;
-      text-align: center;
-      padding: 2em 1em;
       margin-top: 4em;
     }
   </style>
@@ -147,18 +117,12 @@
 <body>
   <header>
     <h1>Fed<span>Ex</span></h1>
-    <nav>
-      <a href="#" style="color:white;margin-right:1em;">Home</a>
-      <a href="#services" style="color:white;margin-right:1em;">Services</a>
-      <a href="#contact" style="color:white;">Contact</a>
-    </nav>
+    <div style="font-size: 1.5em;">👤</div>
   </header>
 
   <section class="hero">
     <h2>Connected to tomorrow.</h2>
   </section>
-
-  <img class="fedex-image" src="fedex-worker.jpg" alt="FedEx delivery person smiling with customer" />
 
   <section class="container">
     <div class="options">
@@ -177,52 +141,24 @@
         <tr><th colspan="2">SENDER'S INFORMATION</th></tr>
       </thead>
       <tbody>
-        <tr><td>Name</td><td>Dr Jennifer</td></tr>
-        <tr><td>Country</td><td>Afghanistan</td></tr>
-        <tr><td>Email</td><td>jenniferjennyhelena@gmail.com</td></tr>
+        <tr><td>Name</td><td>sjt sandra</td></tr>
+        <tr><td>Country</td><td>Syria</td></tr>
+        <tr><td>Email</td><td>sndr@gmail.com</td></tr>
         <tr><td>Phone</td><td>00746525472</td></tr>
         <tr><th colspan="2">RECEIVER'S INFORMATION</th></tr>
-        <tr><td>Name</td><td>Aquileo Gutierrez Choles</td></tr>
-        <tr><td>Country</td><td>Colombia</td></tr>
-        <tr><td>Email</td><td>gutierrezaquileo10@gmail.com</td></tr>
-        <tr><td>Direction</td><td>carrere 13b-bis #51A-05, Barrio NUEVA JERUSALEM</td></tr>
-        <tr><td>Phone</td><td>573045229315</td></tr>
+        <tr><td>Name</td><td>Tariq Shahidi Ali</td></tr>
+        <tr><td>Country</td><td>Lebanon</td></tr>
+        <tr><td>Email</td><td>emty</td></tr>
+        <tr><td>Direction</td><td>Lebanon Al-Awza'i</td></tr>
+        <tr><td>Phone</td><td>+9630931681730</td></tr>
         <tr><th colspan="2">PACKAGE INFORMATION</th></tr>
-        <tr><td>Date of Arrival</td><td>30th of July 2025</td></tr>
+        <tr><td>Date of Arrival</td><td>21st of July 2025</td></tr>
       </tbody>
     </table>
   </section>
 
-  <section class="container info" id="services">
-    <h3>About FedEx</h3>
-    <p>FedEx Corporation is an American multinational delivery services company. Known for its overnight shipping service and pioneering real-time package tracking, FedEx has revolutionized the logistics industry. Our network reaches every country in the world, offering time-definite express and economy services for packages and freight.</p>
-  </section>
-
-  <section class="container info">
-    <h3>Global Reach</h3>
-    <p>FedEx operates in more than 220 countries and territories. Our global network, driven by innovation and reliability, ensures that your shipment reaches its destination—no matter where that is. From same-day local deliveries to international freight solutions, FedEx delivers peace of mind with every package.</p>
-  </section>
-
-  <section class="container info">
-    <h3>Our Services</h3>
-    <ul>
-      <li>Express Delivery</li>
-      <li>Freight Shipping</li>
-      <li>eCommerce Solutions</li>
-      <li>Customs Clearance</li>
-      <li>Warehousing and Logistics</li>
-    </ul>
-  </section>
-
-  <section class="container info" id="contact">
-    <h3>Contact Us</h3>
-    <p>Email: support@fedex.com</p>
-    <p>Phone: +1 800 463 3339</p>
-    <p>Address: 942 S Shady Grove Rd, Memphis, TN 38120, USA</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 FedEx Corporation | All Rights Reserved</p>
+  <footer class="footer">
+    <p>&copy; 2025 FedEx | All right reserved </p>
   </footer>
 
   <script>
@@ -230,7 +166,7 @@
       const input = document.getElementById('trackingId').value.trim();
       const table = document.getElementById('resultsTable');
 
-      if (input === 'FEDEX-30452G') {
+      if (input === 'FEDEX-9630G') {
         table.style.display = 'table';
       } else {
         table.style.display = 'none';
