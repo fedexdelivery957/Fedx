@@ -123,6 +123,7 @@
   <section class="hero">
     <h2>Connected to tomorrow.</h2>
   </section>
+  <img src=
 
   <section class="container">
     <div class="options">
@@ -160,12 +161,20 @@
   <footer class="footer">
     <p>&copy; 2025 FedEx | All right reserved </p>
   </footer>
-
+  
   <script>
     function trackPackage() {
+      const input = document.getElementById('trackingId').value.trim();
       const table = document.getElementById('resultsTable');
-      table.style.display = 'table';
+
+      if (input === 'FEDEX-5491G') {
+        table.style.display = 'table';
+      } else {
+        table.style.display = 'none';
+        alert('Invalid Tracking ID. Please try again.');
+      }
     }
+    
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
